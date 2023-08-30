@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 const { MONGODB_URL } = process.env;
+console.log("Printing db url ",MONGODB_URL)
 
 exports.connect = () => {
 	mongoose
